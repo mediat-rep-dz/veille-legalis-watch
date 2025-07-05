@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { UserRoleManager } from './UserRoleManager';
 import { UserStats } from './UserStats';
 import { TestDataGenerator } from './TestDataGenerator';
+import { CreateAdminHelper } from './CreateAdminHelper';
 import { SecurityMonitor } from '@/components/common/SecurityMonitor';
 import { Settings, Users, Database, Shield } from 'lucide-react';
 
@@ -57,6 +58,7 @@ export function AdminPanel() {
         </TabsList>
 
         <TabsContent value="users" className="space-y-6">
+          <CreateAdminHelper />
           <UserStats />
           <UserRoleManager />
         </TabsContent>
